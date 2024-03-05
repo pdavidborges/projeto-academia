@@ -71,6 +71,35 @@ img{
 
 /********Utilitários***********/
 
+.bg-popup{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-popup-none{
+    display: none;
+}
+
+.popup{
+    position: relative;
+}
+
+.close{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+    cursor: pointer;
+}
+
 .btn{
     background-color: var(--brand);
     color: #FFFFFF;
@@ -467,5 +496,9 @@ img{
 
     .faca-parte .image{
         display: none;
+    }
+
+    .popup img{
+        width: 320px;
     }
 }
